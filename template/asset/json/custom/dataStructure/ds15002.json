@@ -3,12 +3,91 @@
     "id": 15002,
     "blockList": [
         {
-            "name": "未命名块",
-            "blockAttrs": [],
+            "name": "dectype",
+            "blockAttrs": [
+                {
+                    "attr": {
+                        "id": "145859708537_0.9483003552862099",
+                        "varName": "decTypeID",
+                        "varType": 4,
+                        "compData": {
+                            "compType": 1002,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": true,
+                        "moduleID": 3,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "指定类型",
+                        "onlyConfig": false,
+                        "preview": true,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 15,
+                    "x": 15,
+                    "width": 260,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "145859735309_0.24548639588767562",
+                        "varName": "decTypeName",
+                        "varType": 1,
+                        "compData": {
+                            "compType": 9,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "指定名称",
+                        "onlyConfig": false,
+                        "preview": true,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 15,
+                    "x": 277,
+                    "width": 200,
+                    "height": 32
+                }
+            ],
             "blockCondition": [],
-            "blockHeight": 300,
+            "blockHeight": 60,
             "autoOrder": true
         }
     ],
-    "varName": "unnamed15002"
+    "varName": "dectype"
 }

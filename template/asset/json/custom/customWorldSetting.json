@@ -1732,7 +1732,7 @@
                     "y": 9,
                     "x": 15,
                     "width": 1120,
-                    "height": 323
+                    "height": 583
                 },
                 {
                     "attr": {
@@ -1764,7 +1764,9 @@
                         "titleWidth": 100,
                         "eyeShow": true,
                         "lockBlock": false,
-                        "enumEnable": true
+                        "enumEnable": true,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
                     },
                     "attrConditions": [],
                     "y": 30,
@@ -1854,7 +1856,7 @@
                 {
                     "attr": {
                         "id": "145858523991_0.021468700397735407",
-                        "varName": "isDecTypeAll_yyvhc",
+                        "varName": "decTypeAllName_yyvhc",
                         "varType": 1,
                         "compData": {
                             "compType": 9,
@@ -1898,10 +1900,50 @@
                     "x": 378,
                     "width": 260,
                     "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "145859656153_0.909703833080425",
+                        "varName": "decType_yyvhc",
+                        "varType": 3,
+                        "compData": {
+                            "compType": 1003,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 15002,
+                        "arrayMode": true,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "录入线索类型分类（需开启启用线索类型分类）",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable": true,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 332,
+                    "x": 25,
+                    "width": 700,
+                    "height": 250
                 }
             ],
             "blockCondition": [],
-            "blockHeight": 350,
+            "blockHeight": 602,
             "autoOrder": true
         }
     ],

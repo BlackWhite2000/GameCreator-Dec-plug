@@ -7,7 +7,8 @@
             "blockAttrs": [],
             "blockCondition": [],
             "blockHeight": 300,
-            "autoOrder": true
+            "autoOrder": true,
+            "hideBlockTitle": false
         }
     ],
     "varName": "decType_yyvhc"

@@ -949,7 +949,7 @@ class GUI_15002 extends GUI_BASE {
    textC:UIString;
    list:UIList; // Item=15003
    关闭界面:UIButton;
-   标签选项卡:UITabBox;
+   decType:UITabBox;
    constructor(){
       super(15002);
    }
@@ -960,7 +960,7 @@ class ListItem_15002 extends UIListItemData {
    textName:string;
    textC:string;
    list:UIListItemData[];
-   标签选项卡:string;
+   decType:string;
 }
 
 /**

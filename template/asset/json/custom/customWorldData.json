@@ -641,6 +641,41 @@
             "varType": 2,
             "value": true,
             "copy": false
+        },
+        "decType_yyvhc": {
+            "varType": 9,
+            "value": [
+                {
+                    "decTypeID": {
+                        "varType": 0,
+                        "value": 1,
+                        "copy": false
+                    },
+                    "decTypeName": {
+                        "varType": 1,
+                        "value": "类型1",
+                        "copy": false
+                    }
+                },
+                {
+                    "decTypeID": {
+                        "varType": 0,
+                        "value": 2,
+                        "copy": false
+                    },
+                    "decTypeName": {
+                        "varType": 1,
+                        "value": "类型二",
+                        "copy": false
+                    }
+                }
+            ],
+            "copy": false
+        },
+        "decTypeAllName_yyvhc": {
+            "varType": 1,
+            "value": "全部",
+            "copy": false
         }
     }
 }

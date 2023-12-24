@@ -36,7 +36,8 @@ class WorldData {
     static index_yyvhc: number; // = 0; 当前关卡索引
     static IDS_yyvhc: DataStructure_dectext[]; // = [];
     static isDecType_yyvhc: boolean; // = false; 启用线索类型分类
-    static isDecTypeAll_yyvhc: string; // = "全部"; 展示全部情况下的分类名称
+    static decTypeAllName_yyvhc: string; // = "全部"; 展示全部情况下的分类名称
+    static decType_yyvhc: DataStructure_dectype[]; // = [];
 }
 class PlayerData {
     sceneObject: SceneObject;

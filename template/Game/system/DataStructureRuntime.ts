@@ -72,7 +72,9 @@ class DataStructure_dectext {
     decnum: number; // = 0; 绑定变量
 }
 /**
- * #15002 
+ * #15002 dectype
  */
-class DataStructure_unnamed15002 {
+class DataStructure_dectype {
+    decTypeID: number; // = 0; 指定类型
+    decTypeName: string; // = ""; 指定名称
 }

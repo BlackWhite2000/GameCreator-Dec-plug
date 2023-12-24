@@ -15,6 +15,8 @@ class GUI_DecText_yyvhc extends GUI_15002 {
     this.on(EventObject.DISPLAY, this, this.onDisplay)
     // 监听：选中焦点改变事件
     this.list.on(EventObject.CHANGE, this, this.refreshInfo)
+    // 监听：选中焦点改变事件
+    this.decType.on(EventObject.CHANGE, this, this.refreshType)
   }
 
   /**
@@ -41,6 +43,25 @@ class GUI_DecText_yyvhc extends GUI_15002 {
    */
   private onDisplay() {
     UIList.focus = this.list
+    // 刷新标签类型名称
+    if (WorldData.isDecType_yyvhc) {
+      this.decType.visible = true
+      this.decType.items = WorldData.decTypeAllName_yyvhc
+      for (let t = 0; t < WorldData.decType_yyvhc.length; t++)
+        this.decType.items += `,${WorldData.decType_yyvhc[t].decTypeName}`
+    }
+    else {
+      this.decType.visible = false
+    }
+
+    // 刷新列表
+    this.refreshList()
+  }
+
+  /**
+   * 刷新列表
+   */
+  private refreshList() {
     // 获得当前关卡值
     const gn = WorldData.index_yyvhc
     // 获得当前关卡线索集合
@@ -92,17 +113,34 @@ class GUI_DecText_yyvhc extends GUI_15002 {
         continue
       // 获取值
       const decTextData: Module_dec_yyvhc = GameData.getModuleData(GUI_DecText_yyvhc.PLUGIN_MODULE_TYPE_DecText_yyvhc, decTextID)
-      trace(decTextData)
       // 创建项数据，该项数据的类由系统自动生成
       const d = new ListItem_15003()
-      d.data = decTextData
+
+      // 如果开启线索类型分类情况下
+      if (WorldData.isDecType_yyvhc) {
+        // 如果大于0， 表示不是全部
+        if (this.decType.selectedIndex > 0) {
+          if (decTextData.decType === WorldData.decType_yyvhc[this.decType.selectedIndex - 1].decTypeID)
+            d.data = decTextData
+          else
+            continue
+        }
+        else {
+          d.data = decTextData
+        }
+      }
+      // 不开启情况下
+      else {
+        d.data = decTextData
+      }
+
       arr.push(d)
     }
     this.list.items = arr
   }
 
   /**
-   * 显示
+   * 显示详情
    */
   private refreshInfo() {
     const itme = this.list.selectedItem
@@ -110,5 +148,13 @@ class GUI_DecText_yyvhc extends GUI_15002 {
       return
     this.textName.text = itme.data.textName
     this.textC.text = itme.data.textC
+  }
+
+  /**
+   * 类型切换
+   */
+  private refreshType() {
+    // 刷新列表
+    this.refreshList()
   }
 }
