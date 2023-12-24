@@ -1,0 +1,25 @@
+{
+    "attrs": {
+        "textName": {
+            "varType": 1,
+            "value": "线索6",
+            "copy": false
+        },
+        "textC": {
+            "varType": 1,
+            "value": "线索6线索6线索6线索6线索6线索6线索6线索6线索6线索6",
+            "copy": false
+        },
+        "textNum": {
+            "varType": 0,
+            "value": 6,
+            "copy": false
+        },
+        "未命名变量": {
+            "varType": 0,
+            "value": 3,
+            "copy": false
+        }
+    },
+    "id": 6
+}

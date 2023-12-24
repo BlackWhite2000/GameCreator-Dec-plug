@@ -1,0 +1,102 @@
+[
+    {
+        "allPlugUseData": [
+            null,
+            null,
+            null,
+            [
+                15001,
+                15002,
+                15003
+            ],
+            null,
+            null,
+            null,
+            [
+                "asset/image/演示素材/Black.png",
+                "asset/image/演示素材/通用底色.png",
+                "asset/image/演示素材/通用底色2.png",
+                "asset/image/演示素材/滚动条/滚动条-竖.png",
+                "asset/image/演示素材/滚动条/滚动条-横.png"
+            ],
+            [],
+            [
+                2
+            ],
+            [
+                15001
+            ],
+            [],
+            [
+                15001,
+                15002
+            ],
+            [],
+            [
+                [
+                    "objGet_yyvhc",
+                    "解谜设定",
+                    "index_yyvhc",
+                    "IDS_yyvhc"
+                ]
+            ],
+            null,
+            [],
+            [
+                {
+                    "filePath": "Game/GCplug/522/GUI_Dec_yyvhc.ts",
+                    "isServer": false
+                }
+            ],
+            null,
+            null,
+            [],
+            [],
+            []
+        ],
+        "id": 522,
+        "name": "解谜功能 v2.0重大更新(可拖拽组件/线索自由创建/自定义多答案/解密系统)",
+        "lastUpdateTime": 1688140578,
+        "author": "BlackWhite",
+        "gcver": null
+    },
+    {
+        "allPlugUseData": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            [],
+            [],
+            [],
+            [],
+            [
+                15003
+            ],
+            [],
+            null,
+            null,
+            [],
+            [
+                {
+                    "filePath": "Game/GCplug/285/BgmNo_yyvhc.ts",
+                    "isServer": false
+                }
+            ],
+            null,
+            null,
+            [],
+            [],
+            []
+        ],
+        "id": 285,
+        "name": "游戏静音插件",
+        "lastUpdateTime": 1657162779,
+        "author": "BlackWhite",
+        "gcver": null
+    }
+]

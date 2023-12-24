@@ -1,0 +1,298 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 15001,
+    "blockList": [
+        {
+            "name": "dectext",
+            "blockAttrs": [
+                {
+                    "attr": {
+                        "id": "101638395602_0.670656587931187",
+                        "varName": "decIndex",
+                        "varType": 1,
+                        "compData": {
+                            "compType": 9,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "关卡线索集合",
+                        "onlyConfig": false,
+                        "preview": true,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable": true,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 6,
+                    "x": 6,
+                    "width": 310,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "101718114687_0.08974132831469595",
+                        "varName": "decNumBoo",
+                        "varType": 2,
+                        "compData": {
+                            "compType": 15,
+                            "compParam": {
+                                "items": "常规模式,数值集合模式,多答案模式",
+                                "showIndex": false
+                            }
+                        },
+                        "defaultValue": "false",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "输出线索数值的总和",
+                        "alias": "数值集合模式",
+                        "onlyConfig": false,
+                        "preview": true,
+                        "autoTitleWidth": true,
+                        "titleWidth": 0,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable": true,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "101718114687_0.08974132831469595",
+                            "value": true,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 8,
+                    "x": 325,
+                    "width": 130,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "124690242639_0.8111714906553371",
+                        "varName": "decNumBoo_2",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 2,
+                            "compParam": {
+                                "items": "常规模式,数值集合模式,多答案模式",
+                                "showIndex": false
+                            }
+                        },
+                        "defaultValue": "0",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "输出线索数值的总和",
+                        "alias": " ",
+                        "onlyConfig": false,
+                        "preview": true,
+                        "autoTitleWidth": false,
+                        "titleWidth": 0,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable": true,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "101718114687_0.08974132831469595",
+                            "value": false,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 6,
+                    "x": 326,
+                    "width": 130,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "101638395602_0.38007037163912294",
+                        "varName": "decC",
+                        "varType": 1,
+                        "compData": {
+                            "compType": 9,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "正确线索集合",
+                        "onlyConfig": false,
+                        "preview": true,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable": true,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": null,
+                            "value": null,
+                            "isExpression": true,
+                            "jsCode": "attrs.decNumBoo_2 !== 1 && !attrs.decNumBoo;\n",
+                            "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\nattrs.decNumBoo_2 !== 1 && !attrs.decNumBoo",
+                            "codeName": "条件表达式脚本："
+                        }
+                    ],
+                    "y": 9,
+                    "x": 465,
+                    "width": 280,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "109632658491_0.5334499756877655",
+                        "varName": "decClues",
+                        "varType": 2,
+                        "compData": {
+                            "compType": 15,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "开启后，线索答案按照填入的顺序来。如果未开启，线索答案则可以无序。",
+                        "alias": "顺序模式",
+                        "onlyConfig": false,
+                        "preview": true,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": null,
+                            "value": null,
+                            "isExpression": true,
+                            "jsCode": "attrs.decNumBoo_2 !== 1 && !attrs.decNumBoo;\n",
+                            "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\nattrs.decNumBoo_2 !== 1 && !attrs.decNumBoo",
+                            "codeName": "条件表达式脚本："
+                        }
+                    ],
+                    "y": 11,
+                    "x": 759,
+                    "width": 86,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "101638493321_0.9374418430965781",
+                        "varName": "decnum",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 6,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "\\n常规模式：提交谜题后 0=错误 1=正确。\\n数值集合模式：输出线索数值总和。\\n多答案模式：一个线索支持拥有多个正确答案，如：1,2,3|2,3,4。以符号 | 区分。\\n提交谜题后 0=错误 N=正确。N是根据答案位置来，如2,3,4是在位置2，那么输出2。",
+                        "alias": "绑定变量",
+                        "onlyConfig": false,
+                        "preview": true,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable": true,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 9,
+                    "x": 846,
+                    "width": 224,
+                    "height": 32
+                }
+            ],
+            "blockCondition": [],
+            "blockHeight": 50,
+            "autoOrder": true,
+            "hideBlockTitle": false
+        }
+    ],
+    "varName": "dectext",
+    "name": "dectext"
+}

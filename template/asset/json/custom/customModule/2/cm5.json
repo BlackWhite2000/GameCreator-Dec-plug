@@ -1,0 +1,25 @@
+{
+    "attrs": {
+        "textName": {
+            "varType": 1,
+            "value": "线索五",
+            "copy": false
+        },
+        "textC": {
+            "varType": 1,
+            "value": "线索五线索五线索五线索五线索五线索五线索五线索五线索五线索五",
+            "copy": false
+        },
+        "textNum": {
+            "varType": 0,
+            "value": 5,
+            "copy": false
+        },
+        "未命名变量": {
+            "varType": 0,
+            "value": 3,
+            "copy": false
+        }
+    },
+    "id": 5
+}

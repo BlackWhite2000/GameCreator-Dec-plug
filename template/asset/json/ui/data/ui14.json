@@ -1,0 +1,98 @@
+{
+    "root": {
+        "children": [
+            {
+                "id": "145857215134_0.668307460887428",
+                "condition": [],
+                "type": "UIButton",
+                "name": "打开详情界面",
+                "x": 66,
+                "y": 617,
+                "width": 200,
+                "height": 70,
+                "opacity": 1,
+                "rotation": 0,
+                "show": true,
+                "mouseEventEnabledData": true,
+                "materialData": [
+                    {
+                        "materials": []
+                    }
+                ],
+                "mouseEventEnabledInEditor": true,
+                "lock": false,
+                "showOnEditor": true,
+                "hasCommand": [
+                    true
+                ],
+                "isOpen": true,
+                "label": "打开详情界面",
+                "image1": "asset/image/演示素材/通用底色.png",
+                "grid9img1": "15,15,20,15,1",
+                "image2": "asset/image/演示素材/通用底色.png",
+                "grid9img2": "15,15,20,15,1",
+                "image3": "asset/image/演示素材/通用底色.png",
+                "grid9img3": "15,15,20,15,1",
+                "fontSize": 26,
+                "color": "#000000",
+                "overColor": "#000000",
+                "clickColor": "#000000",
+                "bold": false,
+                "italic": false,
+                "smooth": null,
+                "align": 1,
+                "valign": 1,
+                "letterSpacing": 0,
+                "font": "思源黑体",
+                "textDx": 0,
+                "textDy": -2,
+                "textStroke": 0,
+                "textStrokeColor": "#000000"
+            },
+            {
+                "id": "145857557759_0.9079164597443239",
+                "condition": [],
+                "type": "UIString",
+                "name": "文本",
+                "x": 208,
+                "y": 11,
+                "width": 773,
+                "height": 30,
+                "opacity": 1,
+                "rotation": 0,
+                "show": true,
+                "mouseEventEnabledData": false,
+                "materialData": [
+                    {
+                        "materials": []
+                    }
+                ],
+                "mouseEventEnabledInEditor": true,
+                "lock": false,
+                "showOnEditor": true,
+                "hasCommand": [],
+                "isOpen": true,
+                "text": "正确答案123，关闭界面逻辑可自行使用关闭界面指令来实现",
+                "fontSize": 24,
+                "color": "#ffffff",
+                "bold": false,
+                "italic": false,
+                "align": 1,
+                "valign": 0,
+                "leading": 0,
+                "letterSpacing": 0,
+                "font": "Source_Han_Sans",
+                "wordWrap": true,
+                "overflow": 0,
+                "shadowColor": "#000000",
+                "shadowDx": 1,
+                "shadowDy": 1,
+                "stroke": 0,
+                "strokeColor": "#000000"
+            }
+        ]
+    },
+    "id": 14,
+    "instanceClassName": "",
+    "hasRootCommand": []
+}

@@ -1,0 +1,25 @@
+{
+    "attrs": {
+        "textName": {
+            "varType": 1,
+            "value": "线索4",
+            "copy": false
+        },
+        "textC": {
+            "varType": 1,
+            "value": "线索4线索4线索4线索4线索4线索4线索4线索4线索4线索4线索4",
+            "copy": false
+        },
+        "textNum": {
+            "varType": 0,
+            "value": 4,
+            "copy": false
+        },
+        "decType": {
+            "varType": 0,
+            "value": 2,
+            "copy": false
+        }
+    },
+    "id": 4
+}

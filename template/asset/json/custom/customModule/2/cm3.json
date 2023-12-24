@@ -1,0 +1,25 @@
+{
+    "attrs": {
+        "textName": {
+            "varType": 1,
+            "value": "线索三",
+            "copy": false
+        },
+        "textC": {
+            "varType": 1,
+            "value": "线索三线索三线索三线索三线索三线索三线索三线索三线索三线索三线索三线索三",
+            "copy": false
+        },
+        "textNum": {
+            "varType": 0,
+            "value": 3,
+            "copy": false
+        },
+        "decType": {
+            "varType": 0,
+            "value": 2,
+            "copy": false
+        }
+    },
+    "id": 3
+}
