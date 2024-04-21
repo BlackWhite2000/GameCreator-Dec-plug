@@ -38,6 +38,7 @@ class WorldData {
     static isDecType_yyvhc: boolean; // = false; 启用线索类型分类
     static decTypeAllName_yyvhc: string; // = "全部"; 展示全部情况下的分类名称
     static decType_yyvhc: DataStructure_dectype[]; // = [];
+    static decEvent: string; // = ""; 触发结果时执行
 }
 class PlayerData {
     sceneObject: SceneObject;

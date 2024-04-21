@@ -1726,7 +1726,8 @@
                         "lockBlock": false,
                         "enumEnable": true,
                         "enumEnable_get": true,
-                        "enumEnable_set": true
+                        "enumEnable_set": true,
+                        "verticalTitleMode": false
                     },
                     "attrConditions": [],
                     "y": 9,
@@ -1940,6 +1941,45 @@
                     "x": 25,
                     "width": 700,
                     "height": 250
+                },
+                {
+                    "attr": {
+                        "id": "156151057978_0.7084848795570198",
+                        "varName": "decEvent",
+                        "varType": 1,
+                        "compData": {
+                            "compType": 35,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "触发结果时执行",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 30,
+                    "x": 653,
+                    "width": 320,
+                    "height": 32
                 }
             ],
             "blockCondition": [],

@@ -46,11 +46,9 @@ class GUI_Dec_yyvhc extends GUI_15001 {
     GUI_Dec_yyvhc.cuTween = undefined
     // 获得所有dec
     for (let i = 1; i < 100; i++) {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
+      // @ts-ignore 忽略处理
       if (this[`dec${i}`])
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
+        // @ts-ignore 忽略处理
         GUI_Dec_yyvhc.decs.push(this[`dec${i}`])
     }
 
@@ -64,8 +62,7 @@ class GUI_Dec_yyvhc extends GUI_15001 {
     for (let i = 0; i < this.dec.numChildren; i++) {
       let f, f1: any, f2: any, f3: any
       const deci = this.dec.getChildAt(i) as UIButton
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
+      // @ts-ignore 忽略处理
       deci['o_Pos'] = new Point(deci.x, deci.y)
       // 获得数据库数据
       deci.data = GameData.getModuleData(GUI_Dec_yyvhc.PLUGIN_MODULE_TYPE_Dec_yyvhc, Number(deci.name.split('线索')[1])) as Module_dec_yyvhc
@@ -81,14 +78,11 @@ class GUI_Dec_yyvhc extends GUI_15001 {
         GUI_Dec_yyvhc.moveDec.y = this.mouseY - deci.height / 2
         GUI_Dec_yyvhc.moveDec.startDrag()
         GUI_Dec_yyvhc.moveDec.on(EventObject.MOUSE_UP, this, f1 = () => {
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore
+          // @ts-ignore 忽略处理
           GUI_Dec_yyvhc.moveDec.off(EventObject.MOUSE_UP, this, f1)
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore
+          // @ts-ignore 忽略处理
           GUI_Dec_yyvhc.moveDec.off(EventObject.DRAG_END, this, f2)
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore
+          // @ts-ignore 忽略处理
           GUI_Dec_yyvhc.moveDec.off(EventObject.MOUSE_MOVE, this, f3)
           let isP = false
           dec.forEach((v, z) => {
@@ -97,17 +91,13 @@ class GUI_Dec_yyvhc extends GUI_15001 {
               if (GUI_Dec_yyvhc.dragInDec[z] && GUI_Dec_yyvhc.dragInDec[z] !== GUI_Dec_yyvhc.moveDec)
                 this.goHuan(GUI_Dec_yyvhc.dragInDec[z])
 
-              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-              // @ts-ignore
+              // @ts-ignore 忽略处理
               GUI_Dec_yyvhc.dragInDec[z] = null
-              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-              // @ts-ignore
+              // @ts-ignore 忽略处理
               GUI_Dec_yyvhc.dragInDec[z] = GUI_Dec_yyvhc.moveDec
-              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-              // @ts-ignore
+              // @ts-ignore 忽略处理
               GUI_Dec_yyvhc.moveDec.x = v.x + (v.width - GUI_Dec_yyvhc.moveDec.width) / 2
-              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-              // @ts-ignore
+              // @ts-ignore 忽略处理
               GUI_Dec_yyvhc.moveDec.y = v.y + (v.height - GUI_Dec_yyvhc.moveDec.height) / 2
             }
             else if (GUI_Dec_yyvhc.dragInDec[z] === GUI_Dec_yyvhc.moveDec) {
@@ -119,8 +109,7 @@ class GUI_Dec_yyvhc extends GUI_15001 {
               if (GUI_Dec_yyvhc.dragInDec[s] === GUI_Dec_yyvhc.moveDec)
                 delete GUI_Dec_yyvhc.dragInDec[s]
             }
-            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-            // @ts-ignore
+            // @ts-ignore 忽略处理
             this.goHuan(GUI_Dec_yyvhc.moveDec)
           }
           GUI_Dec_yyvhc.moveDec = undefined
@@ -134,17 +123,13 @@ class GUI_Dec_yyvhc extends GUI_15001 {
           })
         })
         GUI_Dec_yyvhc.moveDec.on(EventObject.DRAG_END, this, f2 = () => {
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore
+          // @ts-ignore 忽略处理
           GUI_Dec_yyvhc.moveDec.off(EventObject.MOUSE_UP, this, f1)
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore
+          // @ts-ignore 忽略处理
           GUI_Dec_yyvhc.moveDec.off(EventObject.DRAG_END, this, f2)
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore
+          // @ts-ignore 忽略处理
           GUI_Dec_yyvhc.moveDec.off(EventObject.MOUSE_MOVE, this, f3)
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore
+          // @ts-ignore 忽略处理
           this.goHuan(GUI_Dec_yyvhc.moveDec)
           GUI_Dec_yyvhc.moveDec = undefined
         })
@@ -152,7 +137,7 @@ class GUI_Dec_yyvhc extends GUI_15001 {
     }
 
     // 点击按钮
-    this.button.on(EventObject.MOUSE_OVER, this, () => {
+    this.button.on(EventObject.CLICK, this, () => {
       // 获得当前关卡值
       const gn = WorldData.index_yyvhc
       // 获得当前关卡线索集合
@@ -208,6 +193,7 @@ class GUI_Dec_yyvhc extends GUI_15001 {
         }
       }
       Game.player.variable.setVariable(iss.decnum, num)
+      CommandPage.startTriggerFragmentEvent(WorldData.decEvent, Game.player.sceneObject, Game.player.sceneObject)
     })
   }
 
@@ -269,8 +255,7 @@ class GUI_Dec_yyvhc extends GUI_15001 {
       GUI_Dec_yyvhc.cuTween.clear()
     }
     GUI_Dec_yyvhc.cuTween = Tween.to(button, {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
+      // @ts-ignore 忽略处理
       x: button['o_Pos'].x, y: button['o_Pos'].y,
     }, isZ ? 0 : 100, undefined, Callback.New(() => {
       this.dec.addChild(button)
